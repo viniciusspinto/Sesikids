@@ -1,0 +1,63 @@
+*{
+    overflow: hidden;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url("im");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.botao{
+    font-family: sans-serif;
+    font-size: 1rem;
+    width: 375px;
+    height: 100px;
+    border-radius: 51px;
+    margin-top: 25px;
+    margin-left: 25px;
+    background-color: #ecb1ff;
+    color: #330084;
+    border: 3px solid #330084;
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.botao2{
+    width: 365px;
+    height: 90px;
+    border-radius: 51px;
+    margin-top: 20px;
+    background-color: #ecb1ff;
+    border: 3px solid #330084;
+    cursor: pointer;
+}
+
+.botao2:hover{
+    background-color: #d6a3ff;
+    
+}
+
+.logo-sesi{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.botao:hover{
+    background-color: #d6a3ff;
+}

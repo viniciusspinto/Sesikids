@@ -1,0 +1,146 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede7f6;
+    color: #4a235a;
+    padding-top: 100px; /* espaço pro header fixo */
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #7a37e6, #9b57ff);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Links de ação */
+.links-acoes {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.links-acoes a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #9575cd;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    margin: 5px;
+    transition: background 0.3s ease;
+}
+
+.links-acoes a:hover {
+    background-color: #7e57c2;
+}
+
+/* Section (form card) */
+section {
+    margin: auto;
+    padding: 2rem;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Título do form */
+.login h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #5e35b1;
+}
+
+/* Form labels */
+.formulario label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs */
+input, select {
+    padding: 0.8rem;
+    margin: 0.5rem 0 1rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #6a0dad;
+    outline: none;
+    box-shadow: 0 0 8px rgba(106, 13, 173, 0.5);
+}
+
+/* Mostrar senha */
+.mostrar {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.olho {
+    position: absolute;
+    right: 12px;
+    cursor: pointer;
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #7a37e6;
+    transition: 0.2s;
+}
+
+.olho:hover {
+    color: #550d64;
+}
+
+/* Botão */
+.button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #7e57c2, #5e35b1);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: linear-gradient(135deg, #5e35b1, #4527a0);
+    transform: scale(1.02);
+}
+
+/* Footer */
+footer {
+    background-color: #6a0dad;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,65 @@
+/* Estilização geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ede7f6; /* Roxo muito claro */
+    color: #4a235a; /* Roxo escuro para contraste */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* ocupa toda a altura da tela */
+}
+
+.input {
+    background-color: #ffffff; /* Branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center;
+    width: 30%; /* Largura ajustável */
+    height: auto;
+    box-shadow: 1px 6px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Título */
+h1 {
+    margin-top: 20px;
+    color: #6a0dad; /* Roxo escuro */
+}
+
+/* Centraliza os botões */
+.butoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+button {
+    font-size: 16px;
+}
+
+/* Estilo para links e botões */
+.butoes a,
+.butoes button {
+    background-color: #9575cd; /* Roxo médio */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.butoes a:hover,
+.butoes button:hover {
+    background-color: #7e57c2; /* Roxo mais escuro ao passar o mouse */
+}
+
+/* Parágrafo de sucesso */
+p {
+    font-weight: bold;
+    color: #6a0dad; /* Roxo escuro */
+    margin-top: 20px;
+}

@@ -1,0 +1,145 @@
+*{
+    margin: 0%;
+    font-family: sans-serif;
+    padding: 0px;
+}
+body{
+    background-color: #b4c1ca;
+}
+
+#sair{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    width: 5%;
+    height: 40px;
+    font-size: 18px;
+    order: -1;
+    color: black;
+    text-decoration: none;
+}
+
+#sair:hover{
+    background-color: #97b5ab;
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+.titulo{
+    color: white;
+}
+
+.cabecario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 5px 0px;
+    padding: 20px;
+    background-color: rgb(32, 81, 67);
+}
+
+.containerJogos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.foto1,.foto2,.foto3,.foto4{
+    background-color: rgb(32, 81, 67);
+    margin: 20px;
+    margin-bottom: 10px;
+    height: 60%;
+    border-radius: 15px;
+}
+
+.jogo1, .jogo2, .jogo3, .jogo4{
+    display: flex;
+    margin: 2%;
+    background-color: #f2f2f2;
+    padding: 10px;
+    height: 400px;
+    width: 25%;
+    border-radius: 30px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.roblox-imagem{
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.incerramento{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+    margin-right: 3px;
+}
+
+
+/* ----Button---- */
+.glow-on-hover {
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgb(32, 81, 67);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, rgb(32, 81, 67),rgb(37, 92, 76),#0a2c58, #03487f);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #ffffff
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(32, 81, 67);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
